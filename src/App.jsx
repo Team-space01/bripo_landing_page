@@ -1,9 +1,11 @@
 import "./App.css";
+import { element } from "./Routes/MainRouter";
+import {RouterProvider} from "react-router-dom"
 
 const App = () => {
   return (
     <>
-      <h1>Bripo Landing Page</h1>
+    <RouterProvider router={element}/>
     </>
   );
 };
