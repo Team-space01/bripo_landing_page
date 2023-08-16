@@ -23,7 +23,7 @@ const Header = () => {
   return (
     //Container
     <div
-      className={`w-full h-[120px] flex justify-center items-center sticky top-0 ${
+      className={`w-full h-[120px] flex justify-center items-center sticky top-0 shadow-lg ${
         scrolling ? "bg-[white]": "bg-[white]"}   `}
     >
       {/* Wrapper */}

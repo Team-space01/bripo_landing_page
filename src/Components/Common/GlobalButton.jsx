@@ -19,10 +19,10 @@ const GlobalButton = () => {
       };
     }, []);
   return (
-    <div className=" p-[50px] ">
+    <div className="">
       <button
-        className={` text-[white] cursor-pointer pt-[8px] pb-[8px] pr-[16px] pl-[16px] rounded-md hover:bg-[#1238e023] hover:border-[2px] hover:border-MainCol hover:text-MainCol ease-in-out duration-500 font-semibold text-[24px] hover:rounded-tl-[20px] hover:rounded-br-[30px] ${
-          scrolling ? "bg-[white]" : "bg-MainCol"
+        className={` text-[white] cursor-pointer w-[150px] h-[50px]  rounded-md hover:bg-[#1238e023] hover:border-[2px] hover:border-MainCol hover:text-MainCol ease-in-out duration-500 font-semibold text-[24px] hover:rounded-tl-[20px] hover:rounded-br-[30px] ${
+          scrolling ? "bg-MainCol" : "bg-MainCol"
         } `}
       >
         Join Waitlist
