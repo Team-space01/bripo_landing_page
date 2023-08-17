@@ -22,7 +22,14 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
 
-    // extend: {},
+    // extend: {
+    // },
+    animation: {
+      disappear: "disappear 15s linear forwards",
+      elDisappear1: "elementDisappear1 8s linear forwards",
+      elDisappear2: "elementDisappear2 8s linear 4s forwards",
+      elDisappear3: "elementDisappear3 8s linear forwards"
+    },
   },
   plugins: [],
 };

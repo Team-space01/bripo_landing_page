@@ -7,11 +7,11 @@ import StartingPage2 from "./StartingPage2";
 
 const HomeScreen = () => {
   return (
-    <div>
-      <FirstStartingPage />
-      <IntroSession />
+    <div className="">
+      {/* <FirstStartingPage /> */}
+      {/* <IntroSession /> */}
+      {/* <StartingPage2/> */}
       <StartingPage/>
-      <StartingPage2/>
     </div>
   );
 }
