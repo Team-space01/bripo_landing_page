@@ -8,3 +8,22 @@
   font-family: "Poppins", sans-serif;
  
 } */
+
+@keyframes disappear {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0;  z-index: -100; display: none;}
+}
+@keyframes elementDisappear1 {
+    0% { opacity: 1; }
+  99% { opacity: 1; }
+  100% { opacity: 0;  z-index: -100; display: none;}
+}@keyframes elementDisappear2 {
+    0% { opacity: 1;  display: flex !important;}
+  99% { opacity: 1;   display: flex !important;}
+  100% { opacity: 0;  z-index: -100; display: none;}
+}@keyframes elementDisappear3 {
+    0% { opacity: 1; display: flex !important;}
+  99% { opacity: 1;   display: flex !important;}
+  100% { opacity: 0;  z-index: -100; display: none;}
+}

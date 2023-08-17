@@ -23,16 +23,17 @@ const Header = () => {
   return (
     //Container
     <div
-      className={`w-full h-[120px] flex justify-center items-center sticky top-0 shadow-lg ${
-        scrolling ? "bg-[white]": "bg-[white]"}   `}
+      className={`w-full h-[90px] flex justify-center items-center sticky top-0 shadow-lg ${
+        scrolling ? "bg-[white]" : "bg-[white]"
+      }   `}
     >
       {/* Wrapper */}
-      <div className="w-[90%] h-[100%] flex justify-between items-center">
-        <div className="">
+      <div className="w-[90%] h-[100%] flex justify-between items-center animate__container">
+        <div className=" flex items-center justify-center animate__animated animate__bounce">
           <img src={logo} alt="" />
         </div>
-        <div>
-          <GlobalButton/>
+        <div className="sm:flex" hidden>
+          <GlobalButton />
         </div>
       </div>
     </div>
