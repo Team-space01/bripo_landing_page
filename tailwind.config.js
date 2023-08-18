@@ -2,9 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    colors: {
-      MainCol: "#1638D8",
-    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
@@ -22,15 +19,17 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
 
-    // extend: {
-    // },
+    extend: {
+      colors: {
+        MainCol: "#1638D8",
+      },
+    },
     animation: {
-      disappear: "disappear 15s linear forwards",
+      disappear: "disappear 3s linear forwards",
       elDisappear1: "elementDisappear1 8s linear forwards",
       elDisappear2: "elementDisappear2 8s linear 4s forwards",
-      elDisappear3: "elementDisappear3 8s linear forwards"
+      elDisappear3: "elementDisappear3 8s linear forwards",
     },
   },
   plugins: [],
 };
-
