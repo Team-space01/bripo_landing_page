@@ -9,21 +9,81 @@
  
 } */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #88888877; */
+  background-color: #00d1a4;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: #555555; */
+  background-color: #1638d8;
+}
+
 @keyframes disappear {
-  0% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { opacity: 0;  z-index: -100; display: none;}
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+    display: none;
+  }
 }
 @keyframes elementDisappear1 {
-    0% { opacity: 1; }
-  99% { opacity: 1; }
-  100% { opacity: 0;  z-index: -100; display: none;}
-}@keyframes elementDisappear2 {
-    0% { opacity: 1;  display: flex !important;}
-  99% { opacity: 1;   display: flex !important;}
-  100% { opacity: 0;  z-index: -100; display: none;}
-}@keyframes elementDisappear3 {
-    0% { opacity: 1; display: flex !important;}
-  99% { opacity: 1;   display: flex !important;}
-  100% { opacity: 0;  z-index: -100; display: none;}
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+    display: none;
+  }
+}
+@keyframes elementDisappear2 {
+  0% {
+    opacity: 1;
+    display: flex !important;
+  }
+  99% {
+    opacity: 1;
+    display: flex !important;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+    display: none;
+  }
+}
+@keyframes elementDisappear3 {
+  0% {
+    opacity: 1;
+    display: flex !important;
+  }
+  99% {
+    opacity: 1;
+    display: flex !important;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+    display: none;
+  }
 }
