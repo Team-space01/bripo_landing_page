@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const GlobalButton = ({ myClass, text }) => {
+const GlobalButton = ({ myClass, text, padding }) => {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const GlobalButton = ({ myClass, text }) => {
   return (
     <div className="">
       <button
-        className={` text-[white] cursor-pointer hover:bg-[#1238e023] hover:border-[2px] hover:border-MainCol hover:text-MainCol ease-in-out duration-500 font-semibold text-[24px] hover:rounded-tl-[20px] hover:rounded-br-[30px]  py-4 px-8 ${
+        className={` text-[white] cursor-pointer hover:bg-[#1238e023] hover:border-[2px] hover:border-MainCol hover:text-MainCol ease-in-out duration-500 font-semibold text-[24px] hover:rounded-tl-[20px] hover:rounded-br-[30px] ${padding} px-8 ${
           scrolling ? "bg-MainCol" : "bg-MainCol"
         }  ${myClass}`}
       >

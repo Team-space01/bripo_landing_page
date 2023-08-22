@@ -1,49 +1,54 @@
-import {useEffect,useState} from "react"
-import logo from "../../assets/Mainlogo.svg"
+import { useEffect, useState } from "react";
+import logo from "../../assets/Mainlogo.svg";
 import GlobalButton from "../Common/GlobalButton";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY > 0) {
-          setScrolling(true);
-        } else {
-          setScrolling(false);
-        }
-      };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
 
-      window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     //Container
     <div
-      className={`w-full h-[90px] flex justify-center items-center sticky top-0 shadow-lg ${
+      className={`w-full h-[90px] z-10 sticky top-0 shadow-lg ${
         scrolling ? "bg-[white]" : "bg-[white]"
       }   `}
     >
-      {/* Wrapper */}
-      <div className="w-[90%] h-[100%] flex justify-between items-center animate__container">
-        <div className=" flex items-center justify-center animate__animated animate__bounce">
-          <img src={logo} alt="" />
-        </div>
-        <div className="sm:flex" hidden>
-          <GlobalButton />
+      <div className="max-w-[1350px] mx-auto flex py-1 items-center">
+        {/* Wrapper */}
+        <div className="w-full h-[100%] flex justify-between items-center animate__container ">
+          <div className=" h-[80%]  flex items-center justify-center animate__animated animate__bounce ">
+            <img src={logo} alt="" className="h-[70%]" />
+          </div>
+          <div className="sm:flex" hidden>
+            <GlobalButton
+              text="join waitlist"
+              padding=" py-4 "
+              myClass="rounded-[100px]"
+            />
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Header
+export default Header;
 
 // import React, { useState, useEffect } from "react";
-
 
 // const Header = () => {
 //   const [scrolling, setScrolling] = useState(false);
@@ -73,13 +78,12 @@ export default Header
 //       <button >
 //         {scrolling ? "Scrolled" : "Top"}
 //       </button>
-      
+
 //     </div>
 //   );
 // };
 
 // export default Header;
-
 
 // import logo from "../../assets/Mainlogo.svg"
 // import GlobalButton from "../Common/GlobalButton";

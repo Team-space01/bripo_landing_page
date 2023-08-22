@@ -7,15 +7,15 @@ import GlobalButton from "../../Components/Common/GlobalButton";
 const IntroSession = () => {
   return (
     //Container
-    <div className="max-w-7xl mx-auto flex justify-center items-center mt-[40px] mb-[20px] flex-col ">
+    <div className="max-w-7xl mx-auto flex justify-center items-center mt-[40px] mb-[20px] flex-col  p-4 md:px-10 xl:p-0">
       {/* Wrapper */}
       <div className="w-full flex justify-center">
         {/* First box */}
-        <div className=" w-1/2 hidden sm:flex sm:mr-[30px] mr-0 ">
+        <div className=" w-1/2 hidden md:flex md:mr-[30px] mr-0 ">
           <img src={pic} />
         </div>
         {/* second div */}
-        <div className="w-1/2 sm:w-[50%] mt-[50px] ">
+        <div className="w-full md:w-1/2 md:mt-[50px] ">
           <GlobalText />
         </div>
       </div>
@@ -23,12 +23,16 @@ const IntroSession = () => {
       {/* Wrapper 2 */}
       <div className="w-full flex justify-center mt-[20px]">
         {/* First box */}
-        <div className="w-[100%] sm:w-[50%] flex sm:mr-[30px] mr-0 flex-col   justify-center gap-4 mt-[50px]">
+        <div className="w-full md:w-[50%] flex md:mr-[30px] mr-0 flex-col justify-center gap-4 mt-[50px]">
           <GlobalText />
-          <GlobalButton myClass="rounded-[100px]" text="hello" />
+          <GlobalButton
+            myClass="rounded-[100px]"
+            text="Join waitlist"
+            padding=" py-4 "
+          />
         </div>
         {/* second div */}
-        <div className="w-[50%] hidden  justify-center sm:flex ">
+        <div className="md:w-[50%] hidden  justify-center md:flex ">
           <img src={pic2} />
         </div>
       </div>
