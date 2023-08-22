@@ -1,42 +1,92 @@
 import React from "react";
 import pic from "../../assets/roundPic.svg";
 import { PiQuotesFill } from "react-icons/pi";
-import {} from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const PeopleComment = () => {
   return (
     //Container
-    <div className="w-full  m-0">
+    <div className="w-full flex justify-center items-center m-0">
       {/* Wrapper */}
-      <div className="px-10 xl:p-0  w-full xl:w-[73%] flex flex-col items-center justify-center ">
+      <div className="px-10 xl:p-0  w-full xl:w-[73%] flex flex-col items-center justify-center  ">
         {/* Tittle */}
-        <div>What People are Saying</div>
+        <div className=" font-bold text-5xl text-MainCol mt-[30px]">
+          What People are Saying
+        </div>
         {/* Text */}
         <div className="">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque vero
           magni a quas doloremque molestiae fugit adipisci ipsam minima nisi.
         </div>
         {/* Card holder */}
-        <div className="max-w-sm h-full bg-[#EFF1F3] p-8 items-center flex flex-col rounded-[20px]  border border-[#AAC]">
-          {/* Img */}
-          <div className="w-24 h-24 rounded-full bg-cover ">
-            <img src={pic} alt="" className="w-full " />
-          </div>
-          {/* icon */}
-          <div className="  pt-5">
-            <PiQuotesFill className=" text-[30px] text-MainCol" />
-          </div>
-          {/* text */}
-          <div className="text-center text-[#AAC] text-2xl">
-            Bripo is awesome! I use it every day to get to work and back. It’s
-            easy to book a ride and the drivers are always friendly and
-            professional.
-          </div>
-          {/* Name div */}
-          <div className="border-t-2 border-[#AAC] w-14 mt-8"></div>
-          <div className="">John Alabi</div>
-        </div>
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={3}
+          autoplay={{ delay: 2000, disableOnInteraction: true }}
+          loop={true}
+          modules={[Autoplay]}
+          className="w-full overflow-hidden h-max"
+        >
+          <SwiperSlide>
+            <PeopleCards
+              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
+              textName="John Alabi"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PeopleCards
+              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
+              textName="John Alabi"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PeopleCards
+              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
+              textName="John Alabi"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PeopleCards
+              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
+              textName="John Alabi"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PeopleCards
+              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
+              textName="John Alabi"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PeopleCards
+              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
+              textName="John Alabi"
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
+    </div>
+  );
+};
+
+export const PeopleCards = ({ text, textName }) => {
+  return (
+    <div className="max-w-sm h-full bg-[#EFF1F3] p-8 items-center flex flex-col rounded-[20px]  border border-[#AAC]">
+      {/* Img */}
+      <div className="w-24 h-24 rounded-full bg-cover ">
+        <img src={pic} alt="" className="w-full " />
+      </div>
+      {/* icon */}
+      <div className="  pt-5">
+        <PiQuotesFill className=" text-[30px] text-MainCol" />
+      </div>
+      {/* text */}
+      <div className="text-center text-[#AAC] text-2xl">{text}</div>
+      {/* Name div */}
+      <div className="border-t-2 border-[#AAC] w-14 mt-8"></div>
+      <div className="">{textName}</div>
     </div>
   );
 };
