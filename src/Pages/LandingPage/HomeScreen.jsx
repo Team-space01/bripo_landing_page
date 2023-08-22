@@ -17,7 +17,7 @@ const HomeScreen = () => {
       <WhyBripo />
       <Bripo2 />
       <PeopleComment />
-      <InputButton />
+      {/* <InputButton /> */}
     </div>
   );
 };
