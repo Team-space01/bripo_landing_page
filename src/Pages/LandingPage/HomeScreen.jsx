@@ -1,6 +1,7 @@
 import GlobalCards from "../../Components/Common/GlobalCards";
 import GlobalText from "../../Components/Common/GlobalText";
 import InputButton from "../../Components/Common/InputButton";
+import ToggleButton from "../../Components/Common/ToggleButton";
 import Bripo2 from "./Bripo2";
 import FirstStartingPage from "./FirstStartingPage";
 import IntroSession from "./IntroSession";
@@ -17,6 +18,7 @@ const HomeScreen = () => {
       <WhyBripo />
       <Bripo2 />
       <PeopleComment />
+      <ToggleButton />
       {/* <InputButton /> */}
     </div>
   );

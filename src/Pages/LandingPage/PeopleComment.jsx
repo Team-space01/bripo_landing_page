@@ -10,24 +10,39 @@ const PeopleComment = () => {
     //Container
     <div className="w-full flex justify-center items-center m-0">
       {/* Wrapper */}
-      <div className="px-10 xl:p-0  w-full xl:w-[73%] flex flex-col items-center justify-center  ">
+      <div className="px-10  xl:p-0  w-full xl:w-[73%] flex flex-col  justify-center  ">
         {/* Tittle */}
-        <div className=" font-bold text-5xl text-MainCol mt-[30px]">
+        <div className=" font-bold text-2xl lg:text-4xl xl:text-5xl text-MainCol mt-[30px] pb-3">
           What People are Saying
         </div>
         {/* Text */}
-        <div className="">
+        <div className=" w-full pb-10 font-semibold text-[#AAC] text-lg xl:text-2xl">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque vero
           magni a quas doloremque molestiae fugit adipisci ipsam minima nisi.
         </div>
+
         {/* Card holder */}
         <Swiper
-          spaceBetween={30}
-          slidesPerView={3}
-          autoplay={{ delay: 2000, disableOnInteraction: true }}
+          spaceBetween={10}
+          slidesPerView={1}
+          autoplay={{ delay: 3000, disableOnInteraction: true }}
           loop={true}
           modules={[Autoplay]}
           className="w-full overflow-hidden h-max"
+          breakpoints={{
+            768: {
+              spaceBetween: 10,
+              slidesPerView: 2,
+            },
+            1023: {
+              spaceBetween: 30,
+              slidesPerView: 3,
+            },
+            1280: {
+              spaceBetween: 30,
+              slidesPerView: 3,
+            },
+          }}
         >
           <SwiperSlide>
             <PeopleCards
@@ -84,9 +99,10 @@ export const PeopleCards = ({ text, textName }) => {
       </div>
       {/* text */}
       <div className="text-center text-[#AAC] text-2xl">{text}</div>
-      {/* Name div */}
+      {/* line div */}
       <div className="border-t-2 border-[#AAC] w-14 mt-8"></div>
-      <div className="">{textName}</div>
+      {/* Name div */}
+      <div className="text-2xl text-[#1F2229] font-medium">{textName}</div>
     </div>
   );
 };
