@@ -21,7 +21,7 @@ const GlobalButton = ({ myClass, text, padding }) => {
   return (
     <div className="">
       <button
-        className={` text-[white] cursor-pointer hover:bg-[#1238e023] hover:border-[2px] hover:border-MainCol hover:text-MainCol ease-in-out duration-500 font-semibold text-[24px] hover:rounded-tl-[20px] hover:rounded-br-[30px] ${padding} px-8 ${
+        className={` text-[white] cursor-pointer hover:bg-[#1238e023] hover:border-[2px] hover:border-MainCol hover:text-MainCol ease-in-out duration-500 font-semibold text-[24px] hover:rounded-tl-[0px] hover:rounded-br-[0px] ${padding} px-10 ${
           scrolling ? "bg-MainCol" : "bg-MainCol"
         }  ${myClass}`}
       >

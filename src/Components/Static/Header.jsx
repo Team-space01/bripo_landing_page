@@ -23,21 +23,21 @@ const Header = () => {
   return (
     //Container
     <div
-      className={`w-full h-[90px] z-10 sticky top-0 shadow-lg ${
+      className={`w-full h-[100px] z-10 sticky top-0 shadow-lg  ${
         scrolling ? "bg-[white]" : "bg-[white]"
       }   `}
     >
-      <div className="max-w-[1350px] mx-auto flex py-1 items-center">
+      <div className="max-w-[1350px] mx-auto flex items-center px-2 ">
         {/* Wrapper */}
-        <div className="w-full h-[100%] flex justify-between items-center animate__container ">
-          <div className=" h-[80%]  flex items-center justify-center animate__animated animate__bounce ">
-            <img src={logo} alt="" className="h-[70%]" />
+        <div className="w-full h-[100%] flex justify-between items-center animate__container mt-3  ">
+          <div className=" h-[80%] flex items-center justify-center animate__animated animate__bounce text-sm ">
+            <img src={logo} alt="" className="h-[50%]" />
           </div>
           <div className="sm:flex" hidden>
             <GlobalButton
               text="join waitlist"
-              padding=" py-4 "
-              myClass="rounded-[100px]"
+              padding=" py-3 "
+              myClass="rounded-[30px]"
             />
           </div>
         </div>
@@ -69,7 +69,7 @@ export default Header;
 //     };
 //   }, []);
 
-//   return (
+//   return ( ---
 //     <div
 //       className={`${
 //         scrolling ? "bg-[red]": "bg-[blue]"

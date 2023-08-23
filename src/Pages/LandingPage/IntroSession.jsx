@@ -16,7 +16,12 @@ const IntroSession = () => {
         </div>
         {/* second div */}
         <div className="w-full md:w-1/2 md:mt-[50px] ">
-          <GlobalText />
+          <GlobalText
+            Title=" Introducting Bripo!"
+            subtext="Bripo is a new app that lets you book rides and cabs online from a
+        network of trusted and professional drivers. Whether you need a ride for
+        yourself, your family, or your business, Bripo has you covered"
+          />
         </div>
       </div>
 
@@ -24,11 +29,14 @@ const IntroSession = () => {
       <div className="w-full flex justify-center mt-[20px]">
         {/* First box */}
         <div className="w-full md:w-[50%] flex md:mr-[30px] mr-0 flex-col justify-center gap-4 mt-[50px]">
-          <GlobalText />
+          <GlobalText
+            Title="Join the waitlist! "
+            subtext="Join the Waitlist and Get 50% Off Your First Ride. Bripo is launching soon, but you can get a special offer by joining the waitlist. Just enter your email address below and you’ll get 50% off your first ride when Bripo goes live."
+          />
           <GlobalButton
-            myClass="rounded-[100px]"
+            myClass="rounded-[30px]"
             text="Join waitlist"
-            padding=" py-4 "
+            padding=" py-3 "
           />
         </div>
         {/* second div */}
