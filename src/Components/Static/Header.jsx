@@ -27,17 +27,17 @@ const Header = () => {
         scrolling ? "bg-[white]" : "bg-[white]"
       }   `}
     >
-      <div className="max-w-[1350px] mx-auto flex items-center px-2 ">
+      <div className='max-w-[1350px] mx-auto flex h-full items-center px-2 '>
         {/* Wrapper */}
-        <div className="w-full h-[100%] flex justify-between items-center animate__container mt-3  ">
-          <div className=" h-[80%] flex items-center justify-center animate__animated animate__bounce text-sm ">
-            <img src={logo} alt="" className="h-[50%]" />
+        <div className='w-full h-full flex justify-between items-center animate__container'>
+          <div className='h-9 lg:h-16 flex items-center justify-center animate__animated animate__bounce text-sm '>
+            <img src={logo} alt='' className='h-full' />
           </div>
-          <div className="sm:flex" hidden>
+          <div className='sm:flex' hidden>
             <GlobalButton
-              text="join waitlist"
-              padding=" py-3 "
-              myClass="rounded-[30px]"
+              text='join waitlist'
+              padding='h-[54px]'
+              myClass='rounded-[30px]'
             />
           </div>
         </div>
