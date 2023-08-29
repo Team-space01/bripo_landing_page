@@ -16,7 +16,7 @@ const GetLink = () => {
   };
   return (
     <div>
-      <div className='w-[335px] h-[60px] rounded-full p-2 border-[1px] border-[lightgrey] gap-2 flex '>
+      <div className='w-[300px] sm:w-[335px] h-[60px] rounded-full p-2 border-[1px] border-[lightgrey] gap-2 flex '>
         <input
           onChange={(e) => {
             setRefID(e.target.value);
