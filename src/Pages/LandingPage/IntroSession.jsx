@@ -21,6 +21,7 @@ const IntroSession = () => {
             subtext="Bripo is a new app that lets you book rides and cabs online from a
         network of trusted and professional drivers. Whether you need a ride for
         yourself, your family, or your business, Bripo has you covered"
+            aliging="lg:text-right"
           />
         </div>
       </div>
@@ -32,6 +33,7 @@ const IntroSession = () => {
           <GlobalText
             Title="Join the waitlist! "
             subtext="Join the Waitlist and Get 50% Off Your First Ride. Bripo is launching soon, but you can get a special offer by joining the waitlist. Just enter your email address below and you’ll get 50% off your first ride when Bripo goes live."
+            aliging="lg:text-right"
           />
           <GlobalButton
             myClass="rounded-[30px]"
