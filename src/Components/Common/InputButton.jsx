@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 const InputButton = () => {
-  const [join, setJoin] = useState("Join Waitlist");
-  const [width, setWidth] = useState("55%");
-  const [padding, setPadding] = useState("0 30px");
-  const [buttonWidth, setButtonWidth] = useState("45%");
+  const [join, setJoin] = useState("Get Link");
+  const [width, setWidth] = useState("40%");
+  const [padding, setPadding] = useState("0 20px");
+  const [buttonWidth, setButtonWidth] = useState("%");
 
   const joinWaitlist = () => {
     setPadding("0");
@@ -12,14 +12,14 @@ const InputButton = () => {
     setButtonWidth("100%");
     setJoin("You’ve Joined Waitlist");
     setInterval(() => {
-      setPadding("0 30px");
-      setWidth("55%");
-      setButtonWidth("45%");
-      setJoin("Join Waitlist");
+      setPadding("0 20px");
+      setWidth("40%");
+      setButtonWidth("40%");
+      setJoin("Get Link");
     }, 3000);
   };
   return (
-    <div className="relative w-[500px] h-16 p-[6px] flex border border-[#AAC] rounded-[100px]">
+    <div className="relative w-[350px] h-16 p-[6px] flex border border-[#AAC] rounded-[100px]">
       <input
         type="email"
         required

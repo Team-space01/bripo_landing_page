@@ -1,8 +1,8 @@
 import React from "react";
 
-const GlobalText = ({ Title, subtext }) => {
+const GlobalText = ({ Title, subtext, aliging }) => {
   return (
-    <div className="flex flex-col gap-4 w-full lg:max-w-md lg:text-right">
+    <div className={`flex flex-col gap-4 w-full lg:max-w-md ${aliging}`}>
       <div className="text-MainCol font-bold text-3xl lg:text-[45px] leading-none">
         {Title}
       </div>
