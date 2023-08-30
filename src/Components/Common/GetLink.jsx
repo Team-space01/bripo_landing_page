@@ -16,26 +16,26 @@ const GetLink = () => {
   };
   return (
     <div>
-      <div className="w-[335px] h-[60px] rounded-full p-2 border-[1px] border-[lightgrey] gap-2 flex ml-5">
+      <div className='w-[335px] h-[60px] rounded-full p-2 border-[1px] border-[lightgrey] gap-2 flex '>
         <input
           onChange={(e) => {
             setRefID(e.target.value);
           }}
-          className="w-4/6 outline-none placeholder:text-md pl-1 border-none"
-          type="text"
-          placeholder="Please enter your referral id"
+          className='w-4/6 outline-none placeholder:text-md pl-1 border-none'
+          type='text'
+          placeholder='Please enter your referral id'
         />
         {prepForCopy ? (
           <div
             onClick={copyLink}
-            className="rounded-full cursor-pointer bg-MainCol text-white flex-1 flex justify-center items-center"
+            className='rounded-full cursor-pointer bg-MainCol text-white flex-1 flex justify-center items-center'
           >
             {copied ? "Copied" : " Copy"}
           </div>
         ) : (
           <div
             onClick={submitRefId}
-            className="rounded-full cursor-pointer bg-MainCol text-white flex-1 flex justify-center items-center"
+            className='rounded-full cursor-pointer bg-MainCol text-white flex-1 flex justify-center items-center'
           >
             Get Link
           </div>
