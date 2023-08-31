@@ -1,11 +1,19 @@
 import React, { useState } from "react";
-import { BiDownArrow } from "react-icons/bi";
+import { BiSolidDownArrow } from "react-icons/bi";
+import { BiSolidUpArrow } from "react-icons/bi";
 
-const ToggleButton = () => {
+const ToggleButton = ({ Title, subtext }) => {
   const [show, setShow] = useState(false);
+  const [click, setClick] = useState(false);
 
   const toggle = () => {
     setShow(!show);
+  };
+
+  //for the drop down icos
+
+  const dropDown = () => {
+    setClick(!click);
   };
 
   return (
@@ -15,19 +23,22 @@ const ToggleButton = () => {
       <div className='flex flex-col gap-3'>
         {/*First div */}
         <div className='flex  justify-between items-center'>
-          <div className='font-semibold'>Where is Bripo available?</div>
-          <div onClick={toggle}>
-            <BiDownArrow className='text-[#AAC] ' />
+          <div className='font-semibold'>{Title}</div>
+          <div
+            onClick={() => {
+              dropDown();
+              toggle();
+            }}
+          >
+            {click ? (
+              <BiSolidUpArrow className='text-[#AAC] ' />
+            ) : (
+              <BiSolidDownArrow className='text-[#AAC] ' />
+            )}
           </div>
         </div>
         {/* second div */}
-        {show ? (
-          <div>
-            We’re starting with a few major cities in the Nigeria, such as
-            Lagos, Abuja, Cross-Rivers, etc. We plan to expand to more cities
-            and countries in the future.
-          </div>
-        ) : null}
+        {show ? <div>{subtext}</div> : null}
       </div>
     </div>
   );
