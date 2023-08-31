@@ -23,7 +23,7 @@ const Header = () => {
   return (
     //Container
     <div
-      className={`w-full h-[100px] z-10 sticky top-0 shadow-lg  ${
+      className={`w-full h-[90px] z-10 sticky top-0 shadow-lg  ${
         scrolling ? "bg-[white]" : "bg-[white]"
       }   `}
     >
