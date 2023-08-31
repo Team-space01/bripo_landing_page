@@ -5,7 +5,7 @@ import ToggleButton from "../../Components/Common/ToggleButton";
 import Bripo2 from "./Bripo2";
 import FirstStartingPage from "./FirstStartingPage";
 import GetLink from "../../Components/Common/GetLink";
-import Getting from "./Getting";
+import Getting from "../../Components/Common/Getting";
 import IntroSession from "./IntroSession";
 import PeopleComment from "./PeopleComment";
 import Refer from "./Refer";
@@ -15,7 +15,7 @@ import WhyBripo from "./WhyBripo";
 
 const HomeScreen = () => {
   return (
-    <div className="">
+    <div className=''>
       <StartingPage />
       <IntroSession />
       <WhyBripo />

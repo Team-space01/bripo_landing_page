@@ -62,12 +62,12 @@ const PeopleComment = () => {
               textName='Kareem Eze'
             />
           </SwiperSlide>
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <PeopleCards
-              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
-              textName="John Alabi"
+              text=' Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional.'
+              textName='John Alabi'
             />
-          </SwiperSlide> */}
+          </SwiperSlide>
           {/* <SwiperSlide>
             <PeopleCards
               text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
@@ -88,7 +88,7 @@ const PeopleComment = () => {
 
 export const PeopleCards = ({ text, textName }) => {
   return (
-    <div className='max-w-sm h-full bg-[#EFF1F3] p-8 items-center flex flex-col rounded-[20px]  border border-[#AAC]'>
+    <div className='max-w-sm h-max bg-[#EFF1F3] p-8 items-center flex flex-col rounded-[20px]  border border-[#AAC]'>
       {/* Img */}
       <div className='w-24 h-24 rounded-full bg-cover '>
         <img src={pic} alt='' className='w-full ' />
