@@ -12,6 +12,7 @@ import Refer from "./Refer";
 import StartingPage from "./StartingPage";
 import StartingPage2 from "./StartingPage2";
 import WhyBripo from "./WhyBripo";
+import ToggleComp from "./ToggleComp";
 
 const HomeScreen = () => {
   return (
@@ -21,11 +22,8 @@ const HomeScreen = () => {
       <WhyBripo />
       <Bripo2 />
       <PeopleComment />
-      {/* <GetLink /> */}
       <Refer />
-      {/* <ToggleButton /> */}
-      {/* <InputButton /> */}
-      {/* <Getting /> */}
+      <ToggleComp />
     </div>
   );
 };

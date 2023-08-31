@@ -6,7 +6,7 @@ import GetLink from "../../Components/Common/GetLink";
 const Refer = () => {
   return (
     //Container
-    <div className='max-w-7xl mx-auto flex justify-center  mt-[40px] mb-[20px] flex-col md:px-10 xl:p-0'>
+    <div className='max-w-7xl mx-auto flex justify-center  mt-[40px] mb-[20px] flex-col p-4 md:px-10 xl:p-0'>
       {/* Wrapper */}
       <div className='flex w-full flex-col gap-4'>
         <GlobalText

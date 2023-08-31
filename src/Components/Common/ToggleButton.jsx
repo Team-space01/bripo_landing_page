@@ -10,14 +10,14 @@ const ToggleButton = () => {
 
   return (
     //Container
-    <div className="w-[300px] p-4 h-fit bg-red-200 rounded-3xl">
+    <div className=' p-4 h-fit border border-[#AAC] rounded-3xl'>
       {/* Wrapper */}
-      <div className="flex flex-col gap-3">
+      <div className='flex flex-col gap-3'>
         {/*First div */}
-        <div className="flex  justify-between items-center">
-          <div>Where is Bripo available?</div>
+        <div className='flex  justify-between items-center'>
+          <div className='font-semibold'>Where is Bripo available?</div>
           <div onClick={toggle}>
-            <BiDownArrow />
+            <BiDownArrow className='text-[#AAC] ' />
           </div>
         </div>
         {/* second div */}

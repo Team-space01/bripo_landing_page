@@ -1,5 +1,7 @@
 import React from "react";
 import pic from "../../assets/roundPic.svg";
+import pic2 from "../../assets/RoundPic2.svg";
+import pic3 from "../../assets/RoundPic3.svg";
 import { PiQuotesFill } from "react-icons/pi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -44,54 +46,92 @@ const PeopleComment = () => {
             },
           }}
         >
-          <SwiperSlide>
+          <SwiperSlide className='h-[470px]'>
             <PeopleCards
+              pixing={pic3}
               text='Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional.'
               textName='John Alabi'
             />
           </SwiperSlide>
-          <SwiperSlide>
-            <PeopleCards
-              text='I love Bripo! It’s so convenient and affordable. I can book a cab in minutes and pay with my Bripo wallet.'
-              textName='Aminat Abubakar'
-            />
+          <SwiperSlide className='h-[470px]'>
+            <div className='max-w-sm h-full  bg-[#EFF1F3] p-8 items-center flex flex-col rounded-[20px]  border border-[#AAC]'>
+              {/* Img */}
+              <div className='w-24 h-24 rounded-full bg-cover '>
+                <img src={pic2} alt='' className='w-full ' />
+              </div>
+              {/* icon */}
+              <div className='  pt-5'>
+                <PiQuotesFill className=' text-[30px] text-MainCol' />
+              </div>
+              {/* text */}
+              <div className='text-center text-[#AAC] text-2xl leading-[27px]'>
+                I love Bripo! It’s so convenient and affordable. I can book a
+                cab in minutes and pay with my Bripo wallet.
+              </div>
+              {/* line div */}
+              <div className='border-t-2 border-[#AAC] w-14 mt-[20px]'></div>
+              {/* Name div */}
+              <div className='text-2xl text-[#1F2229] font-medium'>
+                Aminat Abubakar
+              </div>
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='h-[470px]'>
             <PeopleCards
+              pixing={pic}
               text='Bripo is amazing! It’s the best solution for my business. I can dispatch rides for my clients and employees on the app and track their trips in real-time.'
               textName='Kareem Eze'
             />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='h-[470px]'>
             <PeopleCards
+              pixing={pic3}
               text=' Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional.'
               textName='John Alabi'
             />
           </SwiperSlide>
-          {/* <SwiperSlide>
+          <SwiperSlide className='h-[470px]'>
             <PeopleCards
-              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
-              textName="John Alabi"
+              pixing={pic}
+              text='Bripo is amazing! It’s the best solution for my business. I can dispatch rides for my clients and employees on the app and track their trips in real-time.'
+              textName='Kareem Eze'
             />
-          </SwiperSlide> */}
-          {/* <SwiperSlide>
-            <PeopleCards
-              text=" Bripo is awesome! I use it every day to get to work and back. It’s easy to book a ride and the drivers are always friendly and professional."
-              textName="John Alabi"
-            />
-          </SwiperSlide> */}
+          </SwiperSlide>
+          <SwiperSlide className='h-[470px]'>
+            <div className='max-w-sm h-full  bg-[#EFF1F3] p-8 items-center flex flex-col rounded-[20px]  border border-[#AAC]'>
+              {/* Img */}
+              <div className='w-24 h-24 rounded-full bg-cover '>
+                <img src={pic2} alt='' className='w-full ' />
+              </div>
+              {/* icon */}
+              <div className='  pt-5'>
+                <PiQuotesFill className=' text-[30px] text-MainCol' />
+              </div>
+              {/* text */}
+              <div className='text-center text-[#AAC] text-2xl leading-[27px]'>
+                I love Bripo! It’s so convenient and affordable. I can book a
+                cab in minutes and pay with my Bripo wallet.
+              </div>
+              {/* line div */}
+              <div className='border-t-2 border-[#AAC] w-14 mt-[20px]'></div>
+              {/* Name div */}
+              <div className='text-2xl text-[#1F2229] font-medium'>
+                Aminat Abubakar
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
   );
 };
 
-export const PeopleCards = ({ text, textName }) => {
+export const PeopleCards = ({ text, textName, pixing }) => {
   return (
-    <div className='max-w-sm h-max bg-[#EFF1F3] p-8 items-center flex flex-col rounded-[20px]  border border-[#AAC]'>
+    <div className='max-w-sm h-full  bg-[#EFF1F3] p-8 items-center flex flex-col rounded-[20px]  border border-[#AAC]'>
       {/* Img */}
       <div className='w-24 h-24 rounded-full bg-cover '>
-        <img src={pic} alt='' className='w-full ' />
+        <img src={pixing} alt='' className='w-full ' />
       </div>
       {/* icon */}
       <div className='  pt-5'>
@@ -102,7 +142,7 @@ export const PeopleCards = ({ text, textName }) => {
         {text}
       </div>
       {/* line div */}
-      <div className='border-t-2 border-[#AAC] w-14 mt-8'></div>
+      <div className='border-t-2 border-[#AAC] w-14 mt-[20px]'></div>
       {/* Name div */}
       <div className='text-2xl text-[#1F2229] font-medium'>{textName}</div>
     </div>
@@ -110,3 +150,9 @@ export const PeopleCards = ({ text, textName }) => {
 };
 
 export default PeopleComment;
+
+//  <PeopleCards
+//    pixing={pic}
+//    text='I love Bripo! It’s so convenient and affordable. I can book a cab in minutes and pay with my Bripo wallet.'
+//    textName='Aminat Abubakar'
+//  />;

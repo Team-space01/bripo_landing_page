@@ -11,7 +11,7 @@ const Footer = () => {
           Ready to Join The Waitlist?
         </div>
         {/* Second */}
-        <div className='w-full pb-2 font-semibold text-[#AAC] text-lg xl:text-2xl'>
+        <div className='w-full xl:w-3/4 pb-2 font-semibold text-[#AAC] text-lg xl:text-2xl'>
           Don’t miss this opportunity to be one of the first to try Bripo when
           it launches. Join the waitlist today and get 50% off your first ride
           when Bripo goes live.
