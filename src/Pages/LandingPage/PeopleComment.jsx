@@ -19,8 +19,8 @@ const PeopleComment = () => {
         </div>
         {/* Text */}
         <div className=' w-full pb-10 font-semibold text-[#AAC] text-lg xl:text-2xl'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque vero
-          magni a quas doloremque molestiae fugit adipisci ipsam minima nisi.
+          Don’t just take our word for it. Here are some of the reviews from our
+          beta testers who have tried Bripo.
         </div>
 
         {/* Card holder */}
