@@ -33,13 +33,13 @@ const FirstIntroPage = () => {
         </div>
 
         {/* Components two */}
-        <div className=' flex  items-center w-full gap-20'>
+        <div className=' flex flex-col sm:flex-row  items-center w-full gap-20 '>
           {/* first Div */}
           <Slide
             direction='left'
             duration={1000}
-            delay={10000}
-            className='w-1/2 flex justify-end'
+            delay={9000}
+            className='sm:w-1/2 w-full sm:p-0 p-4  flex justify-end'
           >
             <GlobalText
               Title='The Ultimate Ride Booking and Dispatching App '
@@ -50,7 +50,7 @@ const FirstIntroPage = () => {
           <Slide
             direction='right'
             duration={1000}
-            delay={10000}
+            delay={9000}
             className='w-1/2 flex justify-end'
           >
             <img src={Car} alt='' />

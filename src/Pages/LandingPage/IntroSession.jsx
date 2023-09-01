@@ -9,9 +9,9 @@ const IntroSession = () => {
     //Container
     <div className='max-w-7xl mx-auto flex justify-center items-center mt-[40px] mb-[20px] flex-col  p-4 md:px-10 xl:p-0'>
       {/* Wrapper */}
-      <div className='w-full flex justify-center  flex-col sm:flex-row'>
+      <div className='w-full flex justify-center items-center  flex-col sm:flex-row'>
         {/* First box */}
-        <div className=' sm:w-1/2 w-full md:mr-[30px] mr-0 '>
+        <div className=' sm:w-1/2 w-full md:mr-[30px] mr-0 flex justify-center'>
           <img src={pic} />
         </div>
         {/* second div */}
