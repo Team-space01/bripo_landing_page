@@ -3,9 +3,9 @@ import Getting from "../Common/Getting";
 const Footer = () => {
   return (
     //Container
-    <div className=' w-full h- flex justify-center  '>
+    <div className=' w-full h-full flex justify-center pb-6 '>
       {/* Wrapper */}
-      <div className='w-3/4 h-full flex justify-center items-center text-center flex-col gap-3 mb-3 '>
+      <div className='w-3/4 flex justify-center items-center text-center flex-col gap-3 mb-3 '>
         {/* First Div */}
         <div className='font-bold text-2xl lg:text-4xl xl:text-5xl text-MainCol mt-[30px] pb-2'>
           Ready to Join The Waitlist?
