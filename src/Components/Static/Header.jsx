@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/Mainlogo.svg";
 import GlobalButton from "../Common/GlobalButton";
+import { Slide } from "react-awesome-reveal";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -23,24 +24,26 @@ const Header = () => {
   return (
     //Container
     <div
-      className={`w-full h-[90px] z-10 sticky top-0 shadow-lg  ${
+      className={`w-full h-[90px] z-10 sticky top-0 shadow-lg   ${
         scrolling ? "bg-[white]" : "bg-[white]"
       }   `}
     >
-      <div className='max-w-[1350px] mx-auto flex h-full items-center px-2 '>
+      <div className='max-w-[1350px] mx-auto flex justify-between h-full items-center px-2 '>
         {/* Wrapper */}
-        <div className='w-full h-full flex justify-between items-center animate__container'>
-          <div className='h-9 lg:h-16 flex items-center justify-center animate__animated animate__bounce text-sm '>
+        <Slide direction='right' delay={12000} duration={1500}>
+          <div className='h-9 lg:h-16 flex items-center justify-center text-sm '>
             <img src={logo} alt='' className='h-full' />
           </div>
-          <div className='sm:flex' hidden>
+        </Slide>
+        <Slide direction='left' delay={12000} duration={1500}>
+          <div className='hidden sm:flex'>
             <GlobalButton
               text='join waitlist'
               padding='h-[54px]'
               myClass='rounded-[30px]'
             />
           </div>
-        </div>
+        </Slide>
       </div>
     </div>
   );

@@ -13,18 +13,33 @@ import StartingPage from "./StartingPage";
 import StartingPage2 from "./StartingPage2";
 import WhyBripo from "./WhyBripo";
 import ToggleComp from "./ToggleComp";
+import FirstIntroPage from "./FirstIntroPage";
+import { useEffect, useState } from "react";
 
 const HomeScreen = () => {
+  const [content, setContent] = useState(false);
+  useEffect(() => {
+    const animationTimeout = setTimeout(() => {
+      setContent(true);
+    }, 12000);
+    return () => clearTimeout(animationTimeout);
+  }, []);
+
   return (
-    <div className=''>
+    <>
       <StartingPage />
-      <IntroSession />
-      <WhyBripo />
-      <Bripo2 />
-      <PeopleComment />
-      <Refer />
-      <ToggleComp />
-    </div>
+      <FirstIntroPage />
+      {content && (
+        <div className=''>
+          <IntroSession />
+          <WhyBripo />
+          <Bripo2 />
+          <PeopleComment />
+          <Refer />
+          <ToggleComp />
+        </div>
+      )}
+    </>
   );
 };
 
