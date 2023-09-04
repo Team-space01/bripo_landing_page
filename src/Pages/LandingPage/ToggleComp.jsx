@@ -27,7 +27,7 @@ const ToggleComp = () => {
             />
             <ToggleButton
               Title='Where is Bripo available?'
-              subtext='We’re starting with a few major cities in the Nigeria, such as Lagos, Abuja, Cross-Rivers, etc. We plan to expand to more cities and countries in the future.'
+              subtext='We’re starting from Northern cities like Bauchi, Kano, Jos... We plan to expand to more cities and countries in the future.'
             />
             <ToggleButton
               Title='How do I become a Bripo driver?'
