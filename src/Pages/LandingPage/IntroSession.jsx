@@ -17,7 +17,7 @@ const IntroSession = () => {
         {/* second div */}
         <div className='w-full md:w-1/2 md:mt-[50px] '>
           <GlobalText
-            Title=' Introducting Bripo!'
+            Title=' Introducing Bripo!'
             subtext='Bripo is a new app that lets you book rides and cabs online from a
         network of trusted and professional drivers. Whether you need a ride for
         yourself, your family, or your business, Bripo has you covered'
